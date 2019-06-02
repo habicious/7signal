@@ -18,5 +18,9 @@ class testCalAdd(unittest.TestCase):
 		res = calAdd('1')
 		self.assertEqual(res, 1)
 		
+    def test_xStrings(self):
+		res = calAdd('1','2','3','4','5')
+		self.assertEqual(res, 15)
+		
 if __name__ == '__main__':
     unittest.main()
