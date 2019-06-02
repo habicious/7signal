@@ -1,4 +1,9 @@
 import sys
 
-def calAdd(num1, num2):
-	return int(num1.strip() or 0) + int(num2.strip() or 0)
+def calAdd(*argv):
+    total = 0
+
+    for arg in argv:
+		total = total + int(arg.strip() or 0)
+
+    return total
