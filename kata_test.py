@@ -22,5 +22,9 @@ class testCalAdd(unittest.TestCase):
 		res = calAdd('1','2','3','4','5')
 		self.assertEqual(res, 15)
 		
+    def test_newLineStrings(self):
+		res = calAdd('1,2,3')
+		self.assertEqual(res, 6)
+		
 if __name__ == '__main__':
     unittest.main()
