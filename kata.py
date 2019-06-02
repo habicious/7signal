@@ -1,9 +1,11 @@
 import sys
 
-def calAdd(*argv):
+def calAdd(numString):
     total = 0
 
-    for arg in argv:
-		total = total + int(arg.strip() or 0)
+    numInput = [x.strip() for x in numString.split(',')]
+	
+    for num in numInput:
+		total = total + int(num.strip() or 0)
 
     return total
